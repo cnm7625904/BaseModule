@@ -59,7 +59,7 @@ dependencies {
     annotationProcessor  rootProject.ext.dependencies["butterknife_compiler"]
     implementation rootProject.ext.dependencies["butterknife"]
     //工具类
-    implementation rootProject.ext.dependencies["utilcode"]
+    api rootProject.ext.dependencies["utilcode"]
     //rxjava2
     //网络请求
     api rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
