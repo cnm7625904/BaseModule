@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">BaseModule</string>
+    <string name="base_setting">设置</string>
+    <string name="loading">加载中...</string>
+    <string name="no_presenter">请先实例化Presenter</string>
 </resources>
