@@ -1,17 +1,16 @@
 //apply plugin: 'com.android.application'
 apply plugin: 'com.android.library'
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
     compileOptions.encoding="UTF-8"
     defaultConfig {
 //        applicationId "com.example.basemodule"
-        minSdkVersion 21
-        targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+        versionCode rootProject.ext.android["versionCode"]
+        versionName rootProject.ext.android["versionName"]
+        testInstrumentationRunner rootProject.ext.android["runnerNameX"]
     }
 
     buildTypes {
@@ -50,4 +49,7 @@ dependencies {
     implementation rootProject.ext.dependencies["butterknife"]
     //工具类
     implementation rootProject.ext.dependencies["utilcode"]
+    //rxjava2
+    //网络请求
+    implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
 }
