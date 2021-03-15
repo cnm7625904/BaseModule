@@ -1,16 +1,18 @@
 //apply plugin: 'com.android.application'
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 android {
-    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
-    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
-    compileOptions.encoding="UTF-8"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
     defaultConfig {
 //        applicationId "com.example.basemodule"
-        minSdkVersion rootProject.ext.android["minSdkVersion"]
-        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
-        versionCode rootProject.ext.android["versionCode"]
-        versionName rootProject.ext.android["versionName"]
-        testInstrumentationRunner rootProject.ext.android["runnerNameX"]
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -23,7 +25,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
 }
 
 dependencies {
@@ -34,19 +35,27 @@ dependencies {
     androidTestImplementation rootProject.ext.dependencies["runnerX"]
     androidTestImplementation rootProject.ext.dependencies["espresso_coreX"]
     //Toasty
-    implementation rootProject.ext.dependencies["Toasty"]
-    //适配器
-    //recycleview适配器
-    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelperX"]
-    //状态栏管理
-    implementation rootProject.ext.dependencies["barlibrary"]
-    //刷新库
-    implementation rootProject.ext.dependencies["SmartRefreshLayoutX"]
-    implementation rootProject.ext.dependencies["SmartRefreshLayoutXHeader"]
-    implementation rootProject.ext.dependencies["SmartRefreshLayoutXFooter"]
-    //绑定库
-    annotationProcessor  rootProject.ext.dependencies["butterknife_compiler"]
-    implementation rootProject.ext.dependencies["butterknife"]
-    //工具类
-    implementation rootProject.ext.dependencies["utilcode"]
+//    implementation rootProject.ext.dependencies["Toasty"]
+//    implementation fileTree(dir: "libs", include: ["*.jar"])
+//    implementation rootProject.ext.dependencies["appcompatX"]
+//    implementation rootProject.ext.dependencies["constraintlayout"]
+//    testImplementation rootProject.ext.dependencies["junit"]
+//    androidTestImplementation rootProject.ext.dependencies["runnerX"]
+//    androidTestImplementation rootProject.ext.dependencies["espresso_coreX"]
+//    //Toasty
+//    implementation rootProject.ext.dependencies["Toasty"]
+//    //适配器
+//    //recycleview适配器
+//    implementation rootProject.ext.dependencies["BaseRecyclerViewAdapterHelperX"]
+//    //状态栏管理
+//    implementation rootProject.ext.dependencies["barlibrary"]
+//    //刷新库
+//    implementation rootProject.ext.dependencies["SmartRefreshLayoutX"]
+//    implementation rootProject.ext.dependencies["SmartRefreshLayoutXHeader"]
+//    implementation rootProject.ext.dependencies["SmartRefreshLayoutXFooter"]
+//    //绑定库
+//    annotationProcessor  rootProject.ext.dependencies["butterknife_compiler"]
+//    implementation rootProject.ext.dependencies["butterknife"]
+//    //工具类
+//    implementation rootProject.ext.dependencies["utilcode"]
 }
