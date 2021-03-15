@@ -63,4 +63,6 @@ dependencies {
     //rxjava2
     //网络请求
     implementation rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
+    //Gson
+    implementation rootProject.ext.dependencies["retrofit-converter-gson"]
 }
