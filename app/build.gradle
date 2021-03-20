@@ -52,7 +52,7 @@ dependencies {
     //状态栏管理
     implementation rootProject.ext.dependencies["barlibrary"]
     //刷新库
-    implementation rootProject.ext.dependencies["SmartRefreshLayoutX"]
+    implementation rootProject.ext.dependencies["SmartRefreshLayoutX"]  
     implementation rootProject.ext.dependencies["SmartRefreshLayoutXHeader"]
     implementation rootProject.ext.dependencies["SmartRefreshLayoutXFooter"]
     //绑定库
