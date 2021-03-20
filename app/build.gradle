@@ -65,4 +65,6 @@ dependencies {
     api rootProject.ext.dependencies["retrofit-adapter-rxjava2"]
     //Gson
     api rootProject.ext.dependencies["retrofit-converter-gson"]
+    //今日头条屏幕适配
+    api rootProject.ext.dependencies["autosize"]
 }
